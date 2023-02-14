@@ -1,0 +1,1008 @@
+/* common code */
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+Nav a{
+  color: white !important;
+  margin-right: 50px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: .3s all ease-in-out;
+}
+
+Nav a:hover{
+  color: #3FC46E !important;
+}
+
+.NavBg{
+  background-color: #212122 !important;
+}
+
+.NavBgFooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navUserPicDiv{
+  width: 60px;
+  height: 60px;
+  line-height: 80px;
+  border-radius: 100%;
+  border: 2px solid #3FC46E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navarrow{
+  margin-left: 18px;
+  font-size: 25px !important;
+  cursor: pointer;
+}
+
+.navarrow:hover{
+  transform: rotateX(140deg);
+  transition: .5s all ease-in-out;
+}
+
+.footerHeading h4{
+  color: #3FC46E;
+}
+
+.footerHeading ul{
+  margin: 0;
+  padding: 0;
+}
+
+.footerHeading ul li{
+  padding: 8px 0px;
+  list-style-type: none;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+}
+
+.footerHeading ul li:hover{
+  color: #3FC46E;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.registration_top{
+  margin-top: 80px;
+}
+
+.res{
+  padding: 50px;
+  background-color: #162030;
+}
+
+.homeBgColor{
+  background-color: #162030;
+}
+
+.registration_text{
+  color: #0177B5;
+}
+
+.registration_texdt span{
+  color: white;
+}
+
+/* signup button er nicher text ===================*/
+.registration_sub--heading{
+  font-size: 16px;
+  font-weight: 500;
+  color: #0177B5;
+}
+
+/* signup button er nicher login text ===================*/
+.registration_sub--heading span{
+  text-decoration: none !important;
+  color: #ffff;
+  
+}
+
+/* Registrations page input icon parent div start ===================*/
+.registration_icon--section{
+  position: relative;
+}
+
+.login_button{
+  background-color: #0177B5 !important;
+  border: none !important;
+}
+
+.registration_icon{
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Registrations page input icon parent div end ===================*/
+
+/* Home page start ===================*/
+
+.input_main--section{
+  padding: 50px;
+  overflow-y: scroll !important;
+  height: 100vh;
+}
+
+.post_border{
+  border-bottom: 1px solid rgb(211, 207, 207);
+  margin: 10px 0px;
+}
+
+.post_input-button{
+  margin-left: 20px;
+}
+
+.cover_img{
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+  border: 1px solid #6f7070;
+}
+
+.profile_img, .PorfilePage_profile_img{
+  width: 100%;
+  height: 150px;
+  margin-top: -60px;
+  text-align: center;
+}
+
+.profile_img img, .PorfilePage_profile_img img{
+  width: 150px;
+  height: 150px;
+}
+
+.profile_subheading{
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+.post_section{
+  background-color: #1c273b;
+  color: white;
+  padding: 15px;
+  margin-top: 9px;
+  border-radius: 5px;
+}
+
+.postDeleteButton{
+  background-color: #162030 !important;
+  border: none !important;
+  border: 1px solid #3FC46E !important;
+}
+
+.post_img{
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  border: 3px solid #3FC46E;
+  border-radius: 50%;
+}
+
+.post_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.post_userName{
+  width: 100%;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.post_create-button{
+  margin-right: 10px;
+  background-color: #1c273b !important;
+  border: none !important;
+  border: 1px solid #3FC46E !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 500 !important;
+
+}
+
+.jobpostTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.jobpostTitle span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #3FC46E;
+}
+
+.post_userName button{
+  margin-right: 5px;
+}
+
+.post_text h6{
+  text-align: justify;
+ }
+
+.profile_name{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  z-index: -1;
+}
+
+.pen_icon{
+  margin-left: 5px;
+}
+
+.cover_img img{
+  width: 100%;
+}
+
+.profilePic{
+  width: 37%;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid #3FC46E;
+  border-radius: 50%;
+}
+
+.profilePic img{
+  width: 100%;
+  height: 100%;
+}
+
+.profileOverly{
+  background-color: #5c595a;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  transition: .3s all ease-in-out;
+}
+
+.profilePic:hover .profileOverly{
+  opacity: .5;
+  cursor: pointer;
+}
+
+.PostprofilePic{
+  width: 158px;
+  height: 158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #3FC46E;
+  border-radius: 50%;
+}
+
+.profilePic img, .PostprofilePic img{
+  border-radius: 100%;
+}
+
+.profile_dot{
+  position: absolute;
+  top: -160px;
+  right: 0;
+  cursor: pointer;
+}
+
+.pro{
+  position: absolute;
+  top: -120px;
+  right: 10px;
+  padding: 20px 40px;
+  z-index: 99 !important;
+}
+
+.homeProfileButto{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+/* Home page end ===================*/
+
+/* PROFILE page START ===================*/
+
+.ProfilePageButton{
+  margin-right: 10px;
+  background-color: #162030 !important;
+  border: none !important;
+  border: 1px solid #3FC46E !important;
+}
+
+.postPageBio{
+  margin-left: 15px;
+}
+
+.postPageBio p{
+  width: 500px;
+}
+
+.PostPage_profile_name{
+  margin-top: 50px;
+}
+
+.ProfilePage_profile_subheading{
+  width: 900px;
+}
+
+.PorfilePage_profile_img{
+  text-align: left;
+  margin-left: 30px;
+  display: flex;
+  margin-top: -30px;
+  position: relative;
+}
+
+/* PROFILE page END ===================*/
+
+/* Job discriptions part start ===================*/
+
+.job_post_section{
+  padding: 100px;
+  background-color: #162030;
+  border: 1px solid #3FC46E;
+}
+
+.job_post_section h1{
+ color: #3FC46E !important;
+}
+
+.job_discriptions{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(73, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.job_main_section{
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+}
+
+.job_discriptions_border{
+  border: none;
+  border: 1px solid #0177B5 !important;
+  box-shadow: none !important;
+}
+
+/* Job discriptions part end ===================*/
+
+.profile_img_upload{
+  background-color: #EE5684;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.profile_main_section{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 50px;
+}
+
+.profile_img_main_section{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.profile_modal_text{
+  color: white;
+}
+
+.profileUpload_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.profileUpload_img{
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.Choose__img{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  margin-left: 140px;
+}
+
+.Choose__img input{
+  text-align: center;
+}
+
+.profile_modal--button{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.profile_modal--button button{
+  margin-left: 10px;
+}
+
+/* contact info start ===================== */
+
+.contactInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+}
+
+.experienseBG{
+  background-color: #162030;
+  border-radius: 10px;
+}
+
+.experience_text span{
+  color: #3FC46E ;
+}
+
+.updateCollam{
+  background-color: #162030;
+  padding: 50px 0px;
+  border-radius: 10px;
+ border: 1px solid #3FC46E;
+}
+
+.updateCollam h1{
+  color: #3FC46E !important;
+  
+}
+
+.AddContactButton button{
+  border-radius: 5px;
+  background: transparent !important;
+}
+
+.contactButton{
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  
+}
+
+.contactCancelButton{
+  margin-left: 10px;
+}
+
+/* about */
+
+.aboutSection, .experienceSection{
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #1c273b;
+}
+
+.experienceSection{
+  margin-top: 40px;
+}
+
+.experienseBG{
+  border: 1px solid #3FC46E;
+}
+
+.experienseBG h1{
+  color: #3FC46E !important;
+}
+
+.experience_border{
+  border-bottom: 1px solid rgb(231, 230, 230);
+}
+
+.experience_text{
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.educationSection{
+  margin-top: 60px;
+  padding: 50px;
+  background-color: #1c273b;
+  margin-bottom: 50px;
+}
+
+.experience_content{
+  margin-right: 30px;
+  width: 90px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #3FC46E;
+}
+
+.experience_content img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.experience_text{
+  margin-right: 15px;
+}
+
+.experience_text span{
+  color: #3FC46E;
+}
+
+/* about */
+
+.about_delete_button{
+  margin-right: 10px;
+  background-color: #162030 !important;
+  border: none !important;
+  border: 1px solid #3FC46E !important;
+}
+
+/* gallery */
+
+.gallery_main-section{
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #1c273b;
+}
+
+.gallery{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dashboard_main-section{
+  padding: 30px; 
+}
+
+.dashboard_main-center--section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.total_post_section, .total_user_section{
+  padding: 30px;
+  border-radius: 5px;
+  color: rgb(15, 15, 15);
+}
+
+.total_post{
+  padding: 10px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.dashboard_post_align{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard_bg_color{
+  background-color: #1c273b;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.total_post-count{
+  margin-right: 10px;
+}
+
+.total_user_section{
+  text-align: left;
+}
+
+.dashbord_profile{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 100%;
+}
+
+.dashbord_profile img{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.input_hide{
+  display: none !important;
+}
+
+.tabSection{
+  margin-top: 80px;
+}
+
+.nav-item button{
+  font-size: 25px;
+  padding: 10px 115px !important;
+}
+
+.nav-item .nav-link{
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-item .nav-link:focus{
+  color: #3FC46E !important;
+}
+
+.nav-tabs .nav-link.active {
+  background: transparent !important;
+}
+
+.profile_dot-icon, .dot_button{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.dot_button{
+  margin-top: 45px;
+  right: 40px;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+.userSection{
+  border-bottom: 1px solid rgb(175, 173, 173);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c273b;
+  padding: 10px;
+}
+
+.Chatting_userSection{
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.userPhoto{
+  width: 50px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.userPhoto img{
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.userName{
+  margin-left: 10px;
+}
+
+/* gallery */
+
+.gallery_icon_main{
+  position: relative;
+}
+
+.gallery{
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.inputImf{
+  display: none;
+}
+
+.coverImg, .project_input{
+  display: none;
+}
+
+.project_img{
+  height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  border: 1px solid rgb(187, 184, 184);
+  position: relative;
+}
+
+.overly{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color:#1c273b;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project_button{
+  background-color: #0177B5;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #3FC46E;
+}
+
+.project_heading span{
+  color: #3FC46E;
+}
+
+.project_button:hover{
+  background-color: #000000;
+  transition: .3s all ease-in-out;
+}
+
+.coverUpdate{
+  background-color: #EE5684;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99 !important;
+  border-radius: 10px;
+}
+
+.cover_text_color{
+  color: white;
+  margin-bottom: 50px;
+}
+
+.Cover_Update_butto{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 50vh;
+}
+
+.cover_img{
+  /* overflow-y: scroll; */
+  position: relative;
+
+}
+
+.cover_text{
+  background-color: #3FC46E;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bg{
+  background-color: #162030;
+}
+
+.logOUtButtonAccess{
+  background-color: #1c273b !important;
+}
+
+.LogoutSectionDesign{
+  position: absolute;
+  width: full;
+  top: 92px;
+  right: 33px;
+  background-color: white;
+  padding: 10px 8px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.BodyBg{
+  background-color: #1c273b;
+}
+
+.postLoading{
+  display: inline;
+  margin-right: 15px;
+}
+
+.postButtonAlign{
+  text-align: center;
+}
+
+.date_design{
+  color: #3FC46E ;
+}
+
+.chatting_heading span{
+  color: #3FC46E;
+}
+
+.chatting_row{
+  padding: 0px 30px;
+}
+
+.chatting_left, .chatting_right{
+  background-color: #1c273b;
+}
+
+.chatting_left{
+  border-right: 1px solid #3FC46E;
+  padding: 50px 0px;
+  overflow-y: scroll;
+
+}
+
+.chatting_left-friend{
+  color: #3FC46E;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.userAlign{
+  display: flex;
+  border-bottom: 1px solid #4a4a4b;
+}
+
+.right_content{
+  border-bottom: 1px solid #3FC46E;
+}
+
+.activeDot{
+  width: 15px;
+  height: 15px;
+  background-color: #3FC46E;
+  border-radius: 100%;
+  position: absolute;
+  top: 42px;
+  right: -2px;
+}
+
+.smsMainSection{
+  height: 50vh;
+  overflow-y: scroll;
+  padding: 0px 15px;
+}
+
+.reciveSms p, .sendSms p{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.Chattinginputsecton{
+  background-color: #000000;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.sendButton{
+  margin-left: 15px;
+  background: transparent !important;
+  border: 1px solid #3FC46E !important;
+  font-weight: 700 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.onlineSection{
+  margin-left: 8px !important;
+}
+
+.userNameChat{
+  margin-left: 18px;
+  margin-top: 8px;
+}
+
+.error_text{
+  margin: auto;
+  font-size: 25px;
+  color: #3FC46E;
+}
+
+.sendUser{
+  /* background-color: #0177B5; */
+  margin: 10px 0px;
+  padding: 3px 10px;
+  text-align: left;
+  display: inline-block;
+}
+
+.sendSms{
+  background-color: #4ba069;
+  text-align: justify;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.reciUser{
+  text-align: right;
+  padding: 3px 10px;
+  margin: right;
+
+}
+
+.reciveSms{
+ text-align: right;
+ background-color: #0177B5;
+ display: inline-block;
+ text-align: justify;
+ padding: 8px 12px;
+ border-radius: 5px;
+}
+
+
+.cross_icon{
+  font-size: 50px;
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  color: #3FC46E;
+  font-weight: bolder;
+  cursor: pointer;
+ 
+}
+
+.modalBody{
+  color: white !important;
+  /* background-color: #1c273b !important; */
+}
+.modal-content{
+  background-color: #162030 !important;
+  border: 2px solid #3FC46E !important;
+  color: white !important;
+}
+
+.form-label{
+  color: white !important;
+}
+
+.modal-title h4{
+  color: white !important;
+}
+/* End Of Css Code ===================  */
