@@ -274,7 +274,7 @@ return (
                             </div>
                             <div>
                                 {data.uid == item.whosendid &&                                  
-                                  <Button className='postDeleteButton' onClick={()=>handlePostImgDelete(item.id)}>Deletekk</Button>                                  
+                                  <Button className='postDeleteButton' onClick={()=>handlePostImgDelete(item.id)}>Delete</Button>                                  
                                 }
                             </div>
                         </div>

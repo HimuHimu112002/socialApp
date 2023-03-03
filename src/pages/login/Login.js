@@ -62,15 +62,17 @@ const Login = () => {
                 setuserEmail("")
             }).catch((error) => {
                 const errorCode = error.code;
-                setuserEmailerror(error.code)
                 if(errorCode.includes("auth/user-not-found")){
                     setuserEmailerror("Email Not Found")
+                    setloading(false)
                 }
                 if(errorCode.includes("auth/network-request-failed")){
                     setuserEmailerror("Network Connection Not Found")
+                    setloading(false)
                 }
                 if(errorCode.includes("auth/wrong-password")){
                     setuserpassworderror("Password not matching")
+                    setloading(false)
                 }               
 
             });

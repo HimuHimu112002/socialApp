@@ -45,15 +45,18 @@ const HomeProfile = () => {
 
   let handleProfileImageUpload =()=>{
     setprofileImageUploadShow(true)
+    setloading(false)
   }
   let handleImageUploadCancel = ()=>{
     setprofileImageUploadShow(false)
     setImage("")
     setCropper("")
     setCropData("")
+
   }
+
   const handleProfileUpload = (e) => {
-    // e.preventDefault();
+    //e.preventDefault();
     let files;
     if (e.dataTransfer) {
       files = e.dataTransfer.files;
@@ -75,14 +78,16 @@ const HomeProfile = () => {
       const message4 = cropper.getCroppedCanvas().toDataURL();
       uploadString(storageRef, message4, 'data_url').then((snapshot) => {
         getDownloadURL(storageRef).then((downloadURL) => {
+          console.log(downloadURL)
           updateProfile(auth.currentUser, { 
             photoURL: downloadURL,
 
           }).then(()=>{
+            setloading(false)
             setTimeout(()=>{
               toast.success("Profile Picture Upload Successfull.")
-              setloading(false)
             },1000)
+
             setTimeout(()=>{
               setprofileImageUploadShow(false) 
             },3000)
@@ -195,7 +200,7 @@ return (
           <div className='profile_img'>
 
             <div onClick={handleProfileImageUpload} className='profilePic'>
-              <img src={data.photoURL}></img>
+              <img src={data && data.photoURL}/>
               <div className='profileOverly'><BsUpload></BsUpload></div>
             </div>
             
@@ -203,7 +208,7 @@ return (
             <div>
 
               <div className='profile_name'>
-               <h5 className='mt-2 text-white'>Name: {data.displayName}</h5>
+               <h5 className='mt-2 text-white'>Name: {data && data.displayName}</h5>
               </div>
 
 
@@ -279,14 +284,15 @@ return (
             {image ? 
               (<div className='profile_img_main_section'>
                 <div className='profileUpload_img img-preview'>
-                  <img src={data.photoURL}></img>
+                  <img src={data && data.photoURL}></img>
                 </div>                     
               </div>
               ) 
               : 
               (<div className='profile_img_main_section'>
                 <div className='profileUpload_img'>
-                  <img src="image/vactor.png"></img>
+                <img src={data && data.photoURL}></img>
+                  {/* <img src="image/vactor.png"></img> */}
                 </div>                     
               </div> )                              
                               

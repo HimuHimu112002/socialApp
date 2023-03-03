@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useSelector} from 'react-redux';
 import { AiFillCaretDown } from 'react-icons/ai';
-import { getAuth, signOut,onAuthStateChanged } from "firebase/auth";
+import { getAuth, signOut } from "firebase/auth";
 import { Link,useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { userLoginInfo } from '../slices/userSlice';
@@ -35,17 +35,17 @@ return (
         <Row>
             <Col className='NavBg'>
             <Navbar className='px-4' variant="dark">             
-                <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.jpg'></img></Navbar.Brand>
+                <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.jpg'/></Navbar.Brand>
                 <Nav className="m-auto">
                   <Link to="/"><Nav href="#home">Home</Nav></Link>
-                  <Link to="/profile"><Nav href="#home">Profile</Nav></Link>
-                  <Link to="/contact"><Nav href="#home">Contact</Nav></Link>
+                  <Nav href="#"><Link to="/profile">Profile</Link></Nav>
+                  <Link to="/contact"><Nav href="#">Contact</Nav></Link>
                 </Nav>
 
                 <div className='LogoutSection mt-1'>
 
                 <div className='navUserPicDiv'>
-                  <img onClick={()=>sethandleLogoutShow(!handleLogoutShow)} className='logo' src={data.photoURL}></img>
+                  <img onClick={()=>sethandleLogoutShow(!handleLogoutShow)} className='logo' src={data && data.photoURL}/>
                 </div>
                 <AiFillCaretDown onClick={()=>sethandleLogoutShow(!handleLogoutShow)} className='text-white navarrow'></AiFillCaretDown>
 

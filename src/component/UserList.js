@@ -157,7 +157,7 @@ const UserList = () => {
             setsmslist(arr)
         });
 
-    }, [activeFriend.id])
+    }, [activeFriend])
 
 return (
     <Container>
@@ -246,7 +246,7 @@ return (
         </Row>
 
         <Row className='chatting_row'>
-            <h1 className='text-center text-white chatting_heading'>Start conversion <span>with your's friends.</span></h1>
+            <h1 className='text-center text-white chatting_heading'>Start conversation <span>with your's friends.</span></h1>
             <Col className='chatting_left' md='4'>
             <h5 className='chatting_left-friend'>Friends</h5>
             <div className='Chatting_userSection'>
@@ -279,7 +279,7 @@ return (
                             <div className='activeDot'></div>
                         </div>
                         <div className='userNameChat'>
-                        <span className=' text-white'>Name : {activeFriend.name}</span>
+                        <span className=' text-white'>Name : {activeFriend && activeFriend.name}</span>
                         <p className='text-white onlineSection'>Online</p>
 
                         </div>
@@ -290,10 +290,10 @@ return (
 
                 <div className='smsMainSection'>
 
-                    {activeFriend.status == 'single' &&
+                    {activeFriend && activeFriend.status == 'single' &&
                         smslist.map((item)=>(
                         item.whosendid == data.uid ?
-                        item.whoreciveid == activeFriend.id &&
+                        item.whoreciveid == activeFriend && activeFriend.id &&
                         <Row>
                             <Col>
 

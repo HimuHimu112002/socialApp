@@ -540,8 +540,8 @@ a{
 
 .experience_content{
   margin-right: 30px;
-  width: 90px;
-  height: 45px;
+  width: 70px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1005,4 +1005,13 @@ a{
 .modal-title h4{
   color: white !important;
 }
+
+/* .verify{
+  background-color: #5c595a;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 /* End Of Css Code ===================  */

@@ -3,21 +3,18 @@ import {Container,Row, Col} from 'react-bootstrap';
 import HomeProfile from '../../component/HomeProfile';
 import HomePostSection from '../../component/HomePostSection';
 import { Link,useNavigate } from 'react-router-dom';
-import { useSelector} from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import NavMenu from '../../component/NavMenu'
 import Footer from '../../component/Footer'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { userLoginInfo } from '../../slices/userSlice';
 
 const Home = () => {  
 
   let navigate = useNavigate();
+  const auth = getAuth();
+  let dispatch = useDispatch()
   let data = useSelector((state)=> state.userLoginInfo.userInfo)
-    // onAuthStateChanged(auth, (user) => {
-  //   if (user) {
-  //     console.log(user)
-  //     dispatch(UserLoginInfo(user))
-  //     localStorage.setItem("UserInfo",JSON.stringify(user))
-  //   }
-  // });
   
   useEffect(()=> {
     if(!data){
@@ -26,6 +23,8 @@ const Home = () => {
   },[])
 
 return (
+
+  <>
 
   <Container>
     <Row className='homeBgColor'>
@@ -40,7 +39,8 @@ return (
         <Footer></Footer>
     </Row>   
   </Container>
-
+  
+  </>
   )
 }
 
