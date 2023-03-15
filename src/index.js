@@ -18,6 +18,7 @@ import UserExperience from './component/UserExperience'
 import UserEducation from './component/UserEducation';
 import ProjectGallery from './component/ProjectGallery';
 import DashBoard from './component/DashBoard';
+import Setting from './pages/setting/Setting';
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <DashBoard></DashBoard>
+  },
+  {
+    path: "/setting",
+    element: <Setting></Setting>
   },
   
 ]);

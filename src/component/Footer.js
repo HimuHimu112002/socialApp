@@ -1,7 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ const Footer = () => {
             <Col className='px-4 py-4 NavBgFooter'>
               <div>
                 <Navbar variant="dark">
-                <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.jpg'></img></Navbar.Brand>
+                <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.png'></img></Navbar.Brand>
                 </Navbar>
               </div>
 

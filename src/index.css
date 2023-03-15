@@ -18,7 +18,7 @@ Nav a:hover{
 }
 
 .NavBg{
-  background-color: #212122 !important;
+  background-color: #1c273b !important;
 }
 
 .NavBgFooter{
@@ -840,6 +840,12 @@ a{
   padding: 10px 8px;
   border-radius: 5px;
   z-index: 1;
+  text-align: center;
+  margin-right: 0px;
+}
+
+.LogoutSectionDesign a{
+  margin-right: 0px !important;
 }
 
 .BodyBg{
@@ -911,6 +917,7 @@ a{
 
 .reciveSms p, .sendSms p{
   font-family: Arial, Helvetica, sans-serif;
+
   
 }
 
@@ -946,7 +953,6 @@ a{
 }
 
 .sendUser{
-  /* background-color: #0177B5; */
   margin: 10px 0px;
   padding: 3px 10px;
   text-align: left;
@@ -990,7 +996,7 @@ a{
 
 .modalBody{
   color: white !important;
-  /* background-color: #1c273b !important; */
+  
 }
 .modal-content{
   background-color: #162030 !important;
@@ -1006,12 +1012,53 @@ a{
   color: white !important;
 }
 
-/* .verify{
-  background-color: #5c595a;
-  width: 100%;
+.setting_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
+}
+
+.update_user--name{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update_user--name p{
+  margin: 0;
+  padding: 0;
+}
+
+.update_user--logout{
+  margin-top: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.update_user--logout p{
+  margin: 0;
+  padding: 0;
+
+}
+
+.userNameEdit p{
+  margin: 0;
+  padding: 0;
+
+}
+
+.userNameEdit{
+  background-color: #1c273b;
+  display: inline-block;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 5px;
+
+}
 /* End Of Css Code ===================  */

@@ -35,7 +35,7 @@ return (
         <Row>
             <Col className='NavBg'>
             <Navbar className='px-4' variant="dark">             
-                <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.jpg'/></Navbar.Brand>
+                <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.png'/></Navbar.Brand>
                 <Nav className="m-auto">
                   <Link to="/"><Nav href="#home">Home</Nav></Link>
                   <Nav href="#"><Link to="/profile">Profile</Link></Nav>
@@ -51,15 +51,16 @@ return (
 
                 {handleLogoutShow && 
                 
-                <div className='LogoutSectionDesign'>
+                  <div className='LogoutSectionDesign'>
 
-                  <div onClick={handleLogout}>                 
-                    <Button className='logOUtButtonAccess'>LOG OUT<AiOutlineLogout className='pen_icon'></AiOutlineLogout></Button>      
+                    <div onClick={handleLogout}>                 
+                      <Button className='logOUtButtonAccess'>LOG OUT<AiOutlineLogout className='pen_icon'></AiOutlineLogout></Button>      
+                    </div>
+                    <div className='mt-3'>                 
+                      <Link to="/setting"><Button className='logOUtButtonAccess'>SETTING<AiOutlineSetting className='pen_icon'></AiOutlineSetting></Button></Link>       
+                    </div>
+                    
                   </div>
-                  <div className='mt-3'>                 
-                    <Button className='logOUtButtonAccess'>SETTING<AiOutlineSetting className='pen_icon'></AiOutlineSetting></Button>      
-                  </div>
-                </div>
                 }
                 </div>              
             </Navbar>

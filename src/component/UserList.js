@@ -147,9 +147,10 @@ const UserList = () => {
     }
 
     useEffect(()=>{
-        onValue(ref(db, 'sms'), (snapshot) =>{
+        onValue(ref(db, 'sms/'), (snapshot) =>{
             let arr = []
             snapshot.forEach((item)=>{
+                console.log(item.val().msg)
                 if(item.val().whosendid == data.uid && item.val().whoreciveid == activeFriend.id || item.val().whoreciveid == data.uid && item.val().whosendid == activeFriend.id){
                     arr.push(item.val())
                 }
@@ -293,7 +294,7 @@ return (
                     {activeFriend && activeFriend.status == 'single' &&
                         smslist.map((item)=>(
                         item.whosendid == data.uid ?
-                        item.whoreciveid == activeFriend && activeFriend.id &&
+                        item.whoreciveid == (activeFriend && activeFriend.id) &&
                         <Row>
                             <Col>
 
@@ -312,7 +313,7 @@ return (
                             <Col>
 
                                 <div className='sendUser'>
-                                    <div className=''>
+                                    <div>
                                         <p className='text-white sendSms'>{item.msg}</p>
                                     </div>                       
                                 </div>

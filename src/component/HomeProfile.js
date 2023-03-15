@@ -3,10 +3,10 @@ import { useSelector} from 'react-redux';
 import {Container, Row, Col, Form, Button, Modal} from 'react-bootstrap';
 import { BiPencil } from 'react-icons/bi';
 import { getDatabase, ref, set, push, onValue, update } from "firebase/database"
-import { getAuth,updateProfile,onAuthStateChanged } from "firebase/auth";
+import { getAuth,updateProfile } from "firebase/auth";
 import { BsUpload } from 'react-icons/bs';
 import {useNavigate } from 'react-router-dom';
-import { getStorage, ref as sref, uploadString,getDownloadURL,ref as storageref, uploadBytesResumable } from "firebase/storage";
+import { getStorage, ref as sref, uploadString,getDownloadURL,ref as storageref,  } from "firebase/storage";
 import Cropper from "react-cropper";
 import "cropperjs/dist/cropper.css";
 import { useDispatch } from 'react-redux';
@@ -107,7 +107,7 @@ let handleProfileDescriptionInput = (e) =>{
 }
 
 let handleProfileDescriptionSubmit =()=>{
-  console.log("profile", data.uid)
+
   setTimeout(()=>{
     profileDiscriptions(false)
   },2000)
@@ -292,7 +292,7 @@ return (
               (<div className='profile_img_main_section'>
                 <div className='profileUpload_img'>
                 <img src={data && data.photoURL}></img>
-                  {/* <img src="image/vactor.png"></img> */}
+                
                 </div>                     
               </div> )                              
                               
