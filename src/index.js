@@ -19,6 +19,7 @@ import UserEducation from './component/UserEducation';
 import ProjectGallery from './component/ProjectGallery';
 import DashBoard from './component/DashBoard';
 import Setting from './pages/setting/Setting';
+import Error from './component/Error';
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/setting",
     element: <Setting></Setting>
+  },
+  {
+    path: "/*",
+    element: <Error></Error>
   },
   
 ]);

@@ -131,7 +131,7 @@ let handleImagePost = ()=>{
       })
     setTimeout(()=>{
         navigate("/")
-    },2000)
+    },3000)
     
 }
 
