@@ -116,6 +116,10 @@ return (
               </Form.Group>
               <p className='text-danger'>{skillerror}</p>
 
+              <p className='text-white'>Select Image Here.</p>
+              <input className='mb-2' onChange={handleImageUpload} type='file'></input>
+
+
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label className='text-white'>Collage Name</Form.Label>
                 <Form.Control onChange={handleposition} type="text" placeholder="Work Position Name" />
@@ -134,8 +138,7 @@ return (
               </Form.Group>
               <p className='text-danger'>{textareaerror}</p>
 
-              <p className='text-white'>Select Image Here.</p>
-              <input onChange={handleImageUpload} type='file'></input>
+              
 
             </Form>
 
