@@ -135,13 +135,13 @@ return (
                 <p className='text-white'>{item.post}</p>
               ))}
 
-              <div className=' d-flex'>  
+              <div>  
                 <div>
                   <Button onClick={handleContactInfo} className='ProfilePageButton' variant="success">CONTACT INFO</Button>
                 </div>               
 
                   <Link to="/contact">
-                    <div className='AddContactButton'> 
+                    <div className='AddContactButton mt-3'> 
                       <Button>ADD CONTACT</Button>
                     </div>
                   </Link>

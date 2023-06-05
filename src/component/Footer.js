@@ -6,16 +6,20 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <Container>
+    <Footer>
         <Row>
-            <Col className='px-4 py-4 NavBgFooter'>
+
+            <Col sm="10" md="6" lg="2">
+
               <div>
                 <Navbar variant="dark">
                 <Navbar.Brand href="#home"><img className='logo' src='image/linkdin.png'></img></Navbar.Brand>
                 </Navbar>
               </div>
+            </Col>
 
-              <div className='footerHeading m-3'>
+            <Col sm="10" md="6" lg="2">
+            <div className='footerHeading m-3'>
                 <h4>Navigation</h4>
                 <ul>
                   <Link to="/"><li href="#home">Home</li></Link>
@@ -23,7 +27,9 @@ const Footer = () => {
                   <li>Contact</li>
                 </ul>
               </div>
+            </Col>
 
+            <Col sm="10" md="6" lg="3">
               <div className='footerHeading mt-4'>
                 <ul>
                   <li>Talent Solutions</li>
@@ -32,15 +38,9 @@ const Footer = () => {
                   <li>Safery Center</li>
                 </ul>
               </div>
+            </Col>
 
-              <div className='footerHeading mt-4'>                
-                <ul>
-                  <li>Community Guidelines</li>
-                  <li>Privacy & Terms</li>
-                  <li>Mobile App</li>
-                </ul>
-              </div>
-
+            <Col sm="10" md="6" lg="3">
               <div className='footerHeading mt-4'>               
                 <ul>
                   <li>Phone : +008574694 </li>
@@ -48,10 +48,20 @@ const Footer = () => {
                   <li>Address : Dhaka Bangladesh</li>
                 </ul>
               </div>
-
             </Col>
+
+            <Col sm="10" md="6" lg="2">
+              <div className='footerHeading mt-4'>                
+                <ul>
+                  <li>Community Guidelines</li>
+                  <li>Privacy & Terms</li>
+                  <li>Mobile App</li>
+                </ul>
+              </div>
+            </Col>
+    
         </Row>
-    </Container>
+    </Footer>
   )
 }
 

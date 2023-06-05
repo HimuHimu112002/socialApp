@@ -1,0 +1,5 @@
+@media(min-width:768px) and (max-width:1226px){
+    .profile_subheading {
+        width: auto !important;
+    }
+}
