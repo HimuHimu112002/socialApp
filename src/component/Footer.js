@@ -5,10 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  return (
-    <Footer>
-        <Row>
 
+  return (
+    
+    <Container>
+
+        <Row>
             <Col sm="10" md="6" lg="2">
 
               <div>
@@ -59,9 +61,9 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-    
         </Row>
-    </Footer>
+    </Container>
+
   )
 }
 
