@@ -265,7 +265,7 @@ return (
                 <div className='post_section'>
                     <div className='d-flex'>
                         <div className='post_img'>
-                          <img src={data.photoURL}></img>
+                          <h3>{item.whosendname.charAt(0)}</h3>
                         </div>
                         <div className='post_userName mt-2 d-flex'>
                             <div>
@@ -360,3 +360,4 @@ return (
 }
 
 export default HomePostSection
+//charAt(0)

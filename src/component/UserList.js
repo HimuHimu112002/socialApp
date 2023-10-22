@@ -171,8 +171,10 @@ return (
 
                         <div className='userSection'>
                             <div className='userPhoto'>
-                                <img className='w-100 mt-2' src={data.photoURL}></img>
-                                <p className='userName text-white mt-3'>{item.username}</p>
+                                <div className='post_img'>
+                                    <h4 className='text-white'>{item.username.charAt(0)}</h4>
+                                </div>
+                                <p className='userName text-white mt-4'>{item.username}</p>
                             </div>
                             <div>
 
@@ -204,7 +206,9 @@ return (
                     {friendtList.map((item)=>(
                         <div className='userSection'>
                             <div className='userPhoto'>
-                                <img className='w-100 mt-2' src={data.photoURL}></img>
+                                <div className='post_img'>
+                                    <h4 className='text-white'>{item.sendername.charAt(0)}</h4>
+                                </div>
                                 <p className='userName text-white mt-3'>{item.sendername}</p>
                                 
                             </div>
@@ -224,11 +228,13 @@ return (
                     {Confifriend.map((item)=>(
                         <div className='userSection'>
                             <div className='userPhoto'>
-                                <img className='w-100 mt-2' src={data.photoURL}></img>
+                                <div className='post_img'>
+                                    <h4 className='text-white'>{item.recivername.charAt(0)}</h4>
+                                </div>
                                 {data.uid == item.senderid ?
                                 
                                 <>
-                                <p className='userName text-white mt-3'>{item.recivername}</p><br></br>
+                                <p className='userName text-white mt-4'>{item.recivername}</p><br></br>
                                 
                                 </>
                                 :
@@ -254,7 +260,9 @@ return (
             {Confifriend.map((item)=>(
                 <div onClick={()=>handleActiveGroup(item)} className='userSection'>
                     <div className='userPhoto'>
-                        <img className='w-100 mt-2' src={data.photoURL}></img>
+                                <div className='post_img'>
+                                    <h4 className='text-white'>{item.recivername.charAt(0)}</h4>
+                                </div>
                         {data.uid == item.senderid ?                      
                         
                             <p className='userName text-white mt-3'>{item.recivername}</p>
@@ -275,9 +283,10 @@ return (
                     <div className='userAlign'>
                     
                         <div className='userPhoto'>
+                        
                             <img className='w-100 mt-2' src={data.photoURL}></img> 
-
                             <div className='activeDot'></div>
+
                         </div>
                         <div className='userNameChat'>
                         <span className=' text-white'>Name : {activeFriend && activeFriend.name}</span>
